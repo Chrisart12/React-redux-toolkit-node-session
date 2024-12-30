@@ -1,0 +1,23 @@
+.dropdown_menu_custom {
+    background-color: blue!important;
+    position: absolute!important;
+    right: 150px!important;
+}
+
+.dropdown-menu.show {
+    position: absolute!important;
+    right: 150px!important;
+}
+
+// .navbar-nav .dropdown-menu {
+//     position: absolute!important;
+//     right: 150px!important;
+// }
+
+.dropdown-menu[data-bs-popper] {
+    position: absolute!important;
+    top: 100;
+    margin-right: 50px!important;
+    right: 50!important;
+    // left: 150%!important;
+}

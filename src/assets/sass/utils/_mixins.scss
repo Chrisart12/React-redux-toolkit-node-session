@@ -1,0 +1,99 @@
+
+
+@mixin boxShadow {
+    -webkit-box-shadow: 0px 0px 20px 5px $grey-4;
+    box-shadow: 0px 0px 20px 5px $grey-4;
+}
+
+@mixin leftBoxShadow {
+
+    -webkit-box-shadow: 1px 1px 3px -1px $grey-4;
+    box-shadow: 1px 1px 3px -1px $grey-4;
+}
+
+@mixin topBoxShadow {
+    -webkit-box-shadow: -1px 1px 3px 1px $grey-4;
+    box-shadow: -1px 1px 3px 1px $grey-4;
+}
+
+@mixin bottomBoxShadow {
+
+    -webkit-box-shadow: 0 -1px 5px -1px $grey-4;
+    box-shadow: 0 -1px 5px -1px $grey-4;
+}
+
+@mixin subMenuBoxShadow {
+    -webkit-box-shadow: 3px 2px 8px -4px #6A828D;
+    box-shadow: 3px 2px 8px -4px #6A828D;
+}
+
+
+
+
+
+/*
+|-----------------------------------------------
+| Les medias queries
+*/
+@mixin iPadsLandscape {
+    @media screen and (max-width: map-get($myBreakpoints, iPadsLandscape)){
+        @content;
+    }
+}
+
+@mixin iPadsPortrait {
+    @media screen and (max-width: map-get($myBreakpoints, iPadsPortrait)){
+        @content;
+    }
+}
+
+@mixin SmartphonesLandscape {
+    @media screen and (max-width: map-get($myBreakpoints, SmartphonesLandscape)){
+        @content;
+    }
+}
+
+@mixin BigSmartphonesPortrait {
+    @media screen and (max-width: map-get($myBreakpoints, BigSmartphonesPortrait)){
+        @content;
+    }
+}
+
+@mixin SmartphonesPortrait {
+    @media screen and (max-width: map-get($myBreakpoints, SmartphonesPortrait)){
+        @content;
+    }
+}
+
+@mixin desktopMax {
+    @media screen and (max-width: map-get($myBreakpoints, desktopMax)){
+        @content;
+    }
+}
+
+@mixin smallDesktop {
+    @media screen and (max-width: map-get($myBreakpoints, smallDesktop)){
+        @content;
+    }
+}
+
+@mixin xsDesktop {
+    @media screen and (max-width: map-get($myBreakpoints, xsDesktop)){
+        @content;
+    }
+}
+
+@mixin borderBtn {
+    border: 2px solid $pink_color_2;
+}
+
+@mixin hoverBtn {
+    &:hover {
+        background-color: $pinkColor;
+        color: white;
+    }
+}
+
+
+
+
